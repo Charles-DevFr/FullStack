@@ -30,8 +30,8 @@ $result=$stmt->fetchAll();
   $i=0;
       foreach($result as $row){
         echo '<div class="col-sm-12 col-lg-4">
-              <a href="categorie.php">
-              <img src="assets/img/category/'.$row['image'].'"class="animeimage posImage" alt="'.$row['libelle'].'">
+              <a href="TheDistrict_categorie.php">
+              <img src="image/category'.$row['image'].'"class="animeimage posImage" alt="'.$row['libelle'].'">
               <p>'.$row['libelle'].'</p>
               <div class="card-body">
               </div>
@@ -44,9 +44,6 @@ $result=$stmt->fetchAll();
       }
   ?>
 
-  <?php
-  require_once('carouselIndex.php')
-  ?>
 
       </div>
     </div>
@@ -56,5 +53,5 @@ $result=$stmt->fetchAll();
   <br>
 
   <?php
-    require_once('footer.php')
+    require_once('TheDistrict_footer.php')
   ?>

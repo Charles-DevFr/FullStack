@@ -1,16 +1,16 @@
 <?php
-require_once('header.php')
+require_once('TheDistrict_header.php')
 ?>
   <div class="container">
 <br>
 
   <?php
-  require_once('divcategoriePHP.php')
+  require_once('')
   ?>
 
 
   <?php
-  require_once('boutonsSuivPrec.php')
+  require_once('')
   ?>
 
   </div>
@@ -18,7 +18,7 @@ require_once('header.php')
 <br><br>
 
 <?php
-require_once('footer.php')
+require_once('TheDistrict_footer.php')
 ?>
 
     </div>

@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once('TheDistrict_DAO.php');
 
 $servername = "localhost";
 $username = "admin";
@@ -52,33 +51,33 @@ try {
   ?>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="shortcut icon" href="assets/img/the_district_brand/favicon.png">
+  <link rel="shortcut icon" href="image/the_district_brand/favicon.png">
 
 
   <?php
   switch ($_SERVER['REQUEST_URI']) { // Il s'agit d'une variable superglobale PHP qui renvoie l'URL actuelle de la page Web.
     case '/index.php':               // L'instruction switch est utilisée pour vérifier la valeur de $_SERVER['REQUEST_URI'] et exécuter différents blocs de code en fonction de l'URL.
-      echo '<link rel="stylesheet" href="assets/css/index.css">';
+      echo '<link rel="stylesheet" href="css/TheDistrict_Accueil.css">';
       break;
     case '/touslesplats.php':        // Pour chaque cas, le code vérifie si l'URL actuelle correspond à l'URL spécifiée. Si tel est le cas, il fait écho à une balise <link> qui renvoie à une feuille de style CSS spécifique.
-      echo '<link rel="stylesheet" href="assets/css/touslesplats.css">';
+      echo '<link rel="stylesheet" href="css/TheDistrict_Toutlesplats.css">';
       break;
     case '/contact.php':
-      echo '<link rel="stylesheet" href="assets/css/contact.css">'; // La feuille de style CSS liée dans chaque cas est spécifique à la page Web correspondante. Par exemple, lorsque l'URL est /touslesplats.php, le code renvoie à assets/css/touslesplats.css
+      echo '<link rel="stylesheet" href="css/TheDistrict_Contact.css">'; // La feuille de style CSS liée dans chaque cas est spécifique à la page Web correspondante. Par exemple, lorsque l'URL est /touslesplats.php, le code renvoie à assets/css/touslesplats.css
       break;
     case '/categorie.php':
-      echo '<link rel="stylesheet" href="assets/css/categorie.css">';
+      echo '<link rel="stylesheet" href="css/TheDistrict_Categorie.css">';
       break;
     case '/platsparcategorie.php':
-      echo '<link rel="stylesheet" href="assets/css/platsparcategorie.css">';
+      echo '<link rel="stylesheet" href="css/TheDistrict_Platparcategorie.css">';
       break;
     case '/commande.php':
-      echo '<link rel="stylesheet" href="assets/css/commande.css">';
+      echo '<link rel="stylesheet" href="css/TheDistrict_Commande.css">';
       break;
 
 
     default: // The default case is used to specify a fallback CSS stylesheet if the current URL does not match any of the specified URLs. In this case, it links to assets/css/index.css
-      echo '<link rel="stylesheet" href="assets/css/index.css">';
+      echo '<link rel="stylesheet" href="css/TheDistrict_Accueil.css">';
   }
 ?>
 
