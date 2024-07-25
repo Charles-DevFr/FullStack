@@ -1,13 +1,16 @@
-<?php 
+<?php
 
 session_start();
 
-$infoscommande = "\nnom et prenom :".$_REQUEST['nom+prenom'].", email :".$_REQUEST['email'].", telephone :".$_REQUEST['telephone'].", adresse du client :".$_REQUEST['adresse'];
+$information_commande="\nnom et prénom :".$_REQUEST['NometPrenom'].", email :".$_REQUEST['email'].", téléphone :".$_REQUEST['telephone'].", votre adresse :".$_REQUEST['votreadresse'];
 
-$fp = fopen ('scriptcommand.txt', 'a');
+//Ouverture en écriture seule (impossible d'écrire sur le fichier .txt)
+$txt=fopen("AAAA-MM-JJ-HH-MM-SS.txt", "a");
 
-fputs ($fp, $infoscommande);
+//Ecriture du contenu
+fputs($txt, $information_commande);
 
-fclose ($fp);
+//Fermeture du fichier
+fclose($txt);
 
 ?>

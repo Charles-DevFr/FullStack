@@ -38,20 +38,19 @@ $stock=$_GET['catplat'];
 </div>
 
 <div class=container>
-          <div class="row">
+  <div class="row">
 
 <?php
 
 $i=0;
 foreach($result as $row){
-  echo '
-            <span class="allplats col-3">
-              <div>
-                <div class="card mb-3 bg-secondary border border-2 border-dark" style="max-width: 600px; min-height: 300px;">
-                  <div class="row g-0" id="cat">
-                    <div class="col-md-4">
-                      <img src="image/food/'.$row['image'].'" class="img-fluid rounded-4 my-5 mx-2" alt="'.$row['nomplat'].'">
-                    </div>
+  echo '<span class="allplats col-3">
+          <div>
+            <div class="card mb-3 bg-secondary border border-2 border-dark" style="max-width: 600px; min-height: 300px;">
+              <div class="row g-0" id="cat">
+                <div class="col-md-4">
+                  <img src="image/food/'.$row['image'].'" class="img-fluid rounded-4 my-5 mx-2" alt="'.$row['nomplat'].'">
+                </div>
                   <div class="col-md-8">
                     <div class="card-body"><br>
                       <h3 id="textcard" class="card-title">'.$row['nomplat'].'</h3><br>

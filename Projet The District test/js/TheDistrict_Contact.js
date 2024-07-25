@@ -1,78 +1,61 @@
+document.addEventListener('DOMContentLoaded', function (){ /* L'évènement DOMContentLoaded est déclenché quand le document HTML initial est complètement chargé et analysé, sans attendre la fin du chargement des feuilles de styles, images et sous-document. */
+  const formulaire = document.getElementById("formulaire");
+  formulaire.addEventListener('submit', function (e){ /* La méthode addEventListener() de EventTarget attache une fonction à appeler chaque fois que l'évènement spécifié est envoyé à la cible. */
+  {
+      e.preventDefault()
 
-document.addEventListener('DOMContentLoaded', function () {
-    const formulaire = document.getElementById("formulaire");
-    
-    
-    formulaire.addEventListener('submit', function (e) {
-        {
-            
-            e.preventDefault();
+valide=true
+Nom=document.getElementById("NomJS").value
+Prenom=document.getElementById("PrenomJS").value
+email=document.getElementById("emailJS").value
+telephone=document.getElementById("telephoneJS").value
+votreadresse=document.getElementById("votreadresseJS").value
 
-            filtrealpha = new RegExp(/^[A-Za-z]+$/)
-            filtrenum = new RegExp(/^(0|\+33 )[1-9]([-. ]?[0-9]{2} ){3}([-. ]?[0-9]{2})$/)
-            filtremail = new RegExp(/^[a-z0-9.-]+@[a-z0-9.-]+.[a-z0-9]+$/)
-            filtredate = new RegExp(/^[0-9]+-[0-9]+-[0-9]+$/)
-            var nom = document.getElementById("nom").value
-            var prenom = document.getElementById("prenom").value
-            var email = document.getElementById("email").value
-            var telephone = document.getElementById("telephone").value
-            var demande = document.getElementById("demande").value
-            
-            resultat = filtrealpha.test(nom)
-              if (resultat == false)
-                {
-                    valide = false
-                    Swal.fire({
-                        title: "Nom invalide",
-                        text: "Veuillez entrer un nom valide",
-                        icon: "error"
-                      })
-                }
-                
-            resultat = filtrealpha.test(prenom)
-              if (resultat == false)
-                {
-                    valide = false
-                    Swal.fire({
-                        title: "Prénom invalide",
-                        text: "Veuillez entrer un prénom valide",
-                        icon: "error"
-                      })
-                }
-                    
-            resultat = filtremail.test(email)
-              if (resultat == false)
-                {
-                    valide = false
-                    Swal.fire({
-                        title: "email invalide",
-                        text: "Veuillez entrer un email valide",
-                        icon: "error"
-                      })
-                }
-                        
-            resultat = filtrenum.test(telephone)
-              if (resultat == false)
-                {
-                    valide = false
-                    Swal.fire({
-                        title: "Numéro de téléphone invalide",
-                        text: "Veuillez saisir un autre numéro de téléphone",
-                        icon: "error"
-                      })
-                }
-                        
-            resultat = filtrealpha.test(demande)
-              if (resultat == false)
-                {
-                    valide = false
-                    Swal.fire({
-                        title: "Demande invalide",
-                        text: "Veuillez entrer une demane valide",
-                        icon: "error"
-                      })
-                }
-      }
-  })
+filtrechar = new RegExp(/^[A-Za-z\s]+$/)
+filtrenum = new RegExp("^([0-9]{10})+$")
+filtremail = new RegExp (/^[a-z0-9.-]+@[a-z0-9.-]+.[a-z0-9]+$/)
+
+resultat=filtrechar.test(Nom)
+if (resultat==false)
+{
+  valide=false
+  alert("Nom invalide.")
+}
+
+resultat=filtrechar.test(Prenom)
+if (resultat==false)
+{
+  valide=false
+  alert("Prenom invalide.")
+}
+
+resultat=filtremail.test(email)
+if (resultat==false)
+{
+  valide=false
+  alert("Entrez un email valide.")
+}
+
+resultat=filtrenum.test(telephone)
+if (resultat==false)
+{
+  valide=false
+  alert("Entrez un numéro de téléphone valide.")
+}
+
+resultat=filtrechar.test(votreadresse)
+if (resultat==false)
+{
+  valide=false
+  alert("Tape ta demande.")
+}
+
+if (valide)
+  {
+      console.log("Formulaire okey")
+      formulaire.submit()
+  }
+
+  }
 })
-
+})
