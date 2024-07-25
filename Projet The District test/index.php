@@ -22,23 +22,23 @@ $result=$stmt->fetchAll();
       <div class="parallax col-14 col-sm-12">
 
 
-    <div class="container">
+    <div class="container mt-4">
       <div class="row">
 
   <?php
 // affichage des catégories dans une card bootstrap pour les 6 premières catégories
   $i=0;
       foreach($result as $row){
-        echo '<div class="col-sm-12 col-lg-4">
-              <a href="TheDistrict_categorie.php">
-              <img src="image/category'.$row['image'].'"class="animeimage posImage" alt="'.$row['libelle'].'">
-              <p>'.$row['libelle'].'</p>
-              <div class="card-body">
-              </div>
-              </a>
-              </div>';
+        echo '<span class="allcategory col-12 col-md-4">
+                  <div id="category01">
+                    <a href="TheDistrict_Platparcategorie.php?catplat='.$row['id'].'">
+                    <img src="image/category/'.$row['image'].'" width="280px" height="280px" id="category1" class="grow">
+                    </a>
+                    <p>'.$row['libelle'].'</p>
+                  </div>
+                </span>';
               $i++;
-              if($i==6){
+              if($i==12){
                 break;
         }
       }
