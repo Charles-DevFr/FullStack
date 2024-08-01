@@ -362,7 +362,7 @@ function touslesPlatsForeach($result)
                     <div class="card-body"><br>
                       <h3 id="textcard" class="card-title">'.$row['nomplat'].'</h3><br>
                       <h5 id="textcard" class="card-text">'.$row['description'].'</h5><br>
-                      <p class="card-text text-dark position-absolute bottom-0 start-0">Prix :<b> '.$row['prix'].' €</b></p>
+                      <p class="card-text text-dark position-absolute bottom-0 start-0 mt-5">Prix :<b> '.$row['prix'].' €</b></p>
                         <div class="d-flex justify-content-end me-5">
                           <form action="TheDistrict_Commande.php" method="GET">
                             <button type="submit" name="comm" class="btn btn-danger d-flex position-absolute bottom-0 end-0 value="' .$row['id'] . '"id="boutoncommander">Commander</button><br>
@@ -375,7 +375,7 @@ function touslesPlatsForeach($result)
               </div>
             </span>';
     $i++;
-    if ($i == 8) {
+    if ($i == 96) {
       break;
     }
   }

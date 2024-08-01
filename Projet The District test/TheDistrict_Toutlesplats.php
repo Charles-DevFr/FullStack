@@ -1,5 +1,5 @@
 <?php
-  require_once('Thedistrict_header.php');
+  require_once('TheDistrict_header.php');
   ?>
 
   <br>
@@ -15,10 +15,6 @@
       <?php
       require_once('TheDistrict_DAO.php');
       touslesPlatsForeach($result)
-      ?>
-
-      <?php
-      require_once('TheDistrict_Bouton.php');
       ?>
 
     </div>
