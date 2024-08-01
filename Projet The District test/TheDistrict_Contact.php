@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The district Contact</title>
-    <link rel="shortcut icon" type="image/png" href="image/the_district_brand/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="css/TheDistrict_Contact.css">
-</head>
-<body id="body">
+<?php
+  require_once("TheDistrict_header.php");
+    ?>
+
     <div class="container">
-        <?php
-        require_once("TheDistrict_header.php");
-        ?>
       <section class="row">
         <div>
           <svg  class="d-none d-md-block animation h-25 position-absolute bottom-50">
-                <text x="50%" y="50%" dy= "68px" text-anchor="middle">
-                    The District
-                </text>
-            </svg>
+            <text x="50%" y="50%" dy= "68px" text-anchor="middle">
+               The District
+            </text>
+          </svg>
         </div>
     </section>
+
       <br><br>
+
       <div class="container">
       <form id="form" action="script/script_contact.php" method="post">
         <form id="formulaire">
@@ -57,13 +48,16 @@
       </div>
     </form>
   </div>
+
       <br><br>
+
       <div class="container">
         <?php
         require_once("TheDistrict_footer.php");
         ?>
       </div>
     </div>
+    
     <script src="js/TheDistrict_Contact.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

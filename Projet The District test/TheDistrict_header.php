@@ -28,7 +28,7 @@ try {
     case 'index.php':               // L'instruction switch est utilisée pour comparer l'URL actuelle avec une liste d'URL prédéfinies.
       echo '<title>Accueil</title>';
       break;                         // L'instruction break est utilisée pour quitter le bloc switch une fois qu'une correspondance est trouvée.
-    case 'TheDistrict_Touslesplats.php':        // Pour chaque 'case', si l'URL actuelle correspond à l'URL spécifiée, le code à l'intérieur de ce 'case' sera exécuté. Dans ce cas, il définit le titre de la page Web à l'aide de l'instruction echo.
+    case 'TheDistrict_Toutlesplats.php':        // Pour chaque 'case', si l'URL actuelle correspond à l'URL spécifiée, le code à l'intérieur de ce 'case' sera exécuté. Dans ce cas, il définit le titre de la page Web à l'aide de l'instruction echo.
       echo '<title>Plats</title>';
       break;
     case 'TheDistrict_Contact.php':
@@ -45,42 +45,14 @@ try {
       break;
 
 
-    default:                        // Si l'URL actuelle ne correspond à aucune des URL spécifiées, le code du bloc par défaut sera exécuté, ce qui définit le titre sur "NoPage"
+    default:              // Si l'URL actuelle ne correspond à aucune des URL spécifiées, le code du bloc par défaut sera exécuté, ce qui définit le titre sur "NoPage"
       echo '<title>Accueil</title>';
   }
   ?>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="shortcut icon" href="image/the_district_brand/favicon.png">
-
-
-  <?php
-  switch ($_SERVER['REQUEST_URI']) { // Il s'agit d'une variable superglobale PHP qui renvoie l'URL actuelle de la page Web.
-    case '/index.php':               // L'instruction switch est utilisée pour vérifier la valeur de $_SERVER['REQUEST_URI'] et exécuter différents blocs de code en fonction de l'URL.
-      echo '<link rel="stylesheet" href="css/TheDistrict_Accueil.css">';
-      break;
-    case 'TheDistrict_Touslesplats.php':        // Pour chaque cas, le code vérifie si l'URL actuelle correspond à l'URL spécifiée. Si tel est le cas, il fait écho à une balise <link> qui renvoie à une feuille de style CSS spécifique.
-      echo '<link rel="stylesheet" href="css/TheDistrict_Toutlesplats.css">';
-      break;
-    case 'TheDistrict_Contact.php':
-      echo '<link rel="stylesheet" href="css/TheDistrict_Contact.css">'; // La feuille de style CSS liée dans chaque cas est spécifique à la page Web correspondante. Par exemple, lorsque l'URL est TheDistrict_Touslesplats.php, le code renvoie à /css/TheDistrict_Toutlesplats.css
-      break;
-    case 'TheDistrict_Categorie.php':
-      echo '<link rel="stylesheet" href="css/TheDistrict_Categorie.css">';
-      break;
-    case 'TheDistrict_Platsparcategorie.php':
-      echo '<link rel="stylesheet" href="css/TheDistrict_Platparcategorie.css">';
-      break;
-    case 'TheDistrict_Commande.php':
-      echo '<link rel="stylesheet" href="css/TheDistrict_Commande.css">';
-      break;
-
-
-    default: // The default case is used to specify a fallback CSS stylesheet if the current URL does not match any of the specified URLs. In this case, it links to assets/css/index.css
-      echo '<link rel="stylesheet" href="css/TheDistrict_Accueil.css">';
-  }
-?>
-
+  <link rel="stylesheet" href="css/TOUTLECSS.css">
 
 </head>
 

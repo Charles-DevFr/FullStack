@@ -1,0 +1,401 @@
+#body {
+    background: rgb(255,80,80);
+    background: linear-gradient(180deg, rgba(255,80,80,1) 0%, rgba(153,0,0,1) 100%);
+}
+
+#navbar {
+    background-color: #303030;
+    border-radius: 20px;
+}
+
+#buttonnavbar {
+    background-color: #ff0000;
+}
+
+#textnavbar {
+    color: #ff0000;
+    font-size: 28px;
+}
+
+#imagenavbar {
+    margin-left: 20px;
+}
+
+#image {
+    border-radius: 40px;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+p {
+    height: 40px;
+    color: #303030;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#titreplats {
+    display: flex;
+    justify-content: center;
+    color: #303030;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.card-body {
+    background-color: #636363;
+    border-radius: 12px;
+}
+
+.card {
+    border-radius: 20px;
+    border-color: #000000;
+    border-width: 6px;
+}
+
+.card-title {
+    color: #303030;
+    font-size: 24px;
+}
+
+.img-fluid {
+    width: 280px;
+    height: 140px;
+}
+
+.animation {
+    position: absolute;
+    bottom: 320px;
+    right: 20px;
+}
+
+.commander {
+    display: flex;
+    margin-left: 220px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+svg {
+	font-family: "Itim", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 10s alternate;
+	stroke-width: 2;
+	stroke: #9F0000;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {fill: rgba(255, 255, 255, 0); stroke: rgba(255, 0, 0, 0.315);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;}
+	70%  {fill: rgba(170, 170, 170, 0); stroke: rgba(255, 0, 0, 0.514);}
+	80%  {fill: rgba(85, 85, 85, 0); stroke: rgba(255, 0, 0, 0.76); stroke-width: 3;}
+	100% {fill: rgb(0, 0, 0); stroke: rgb(255, 0, 0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;}
+}
+
+@media screen and (max-width: 600px) {
+    #titreplats {
+        font-size: xx-large;
+    }
+    .row div img {
+        width: 68%;
+        height: auto;
+        display: flex;
+    }
+
+    .allplats {
+        min-width: 320px;
+        max-width: 320px;
+    }
+}
+
+#video {
+    border-radius: 40px;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+p {
+    height: 40px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#recherche {
+    position: relative;
+    bottom: 360px; left: 20px;
+    background-color: #303030;
+    border-radius: 20px;
+    border-color: #979494;
+    color: #ff0000;
+}
+
+.animation {
+    position: absolute;
+    bottom: 320px;
+    right: 20px;
+}
+
+.parallax {
+    background-image: url("/image/f89f6fb34d1677dc7c71dd70bead353c.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 10px solid;
+    border-color: #303030;
+}
+
+.grow {
+    transition: 1s ease;
+}
+    
+.grow:hover{
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: 1s ease;
+}
+    
+
+#category1 {
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#category2 {
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#category3 {
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#category4 {
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#category5 {
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#category6 {
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+
+#category01 {
+    text-align: center;
+}
+#category02 {
+    text-align: center;
+}
+#category03 {
+    text-align: center;
+}
+#category04 {
+    text-align: center;
+}
+#category05 {
+    text-align: center;
+}
+#category06 {
+    text-align: center;
+}
+
+#plat01 {
+    display: flex;
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#plat02 {
+    display: flex;
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+#plat03 {
+    display: flex;
+    border-radius: 80px;
+    border: 8px solid;
+    border-color: #979494;
+}
+
+#plataccueil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#textcard {
+    color: #979494;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+p {
+    height: 40px;
+    color: #ff0000;
+}
+
+#textform {
+    font-size: large;
+    color: #ffffff;
+}
+
+#cardcommand {
+    background-color: #303030;
+    border: 4px solid;
+    border-radius: 20px;
+    border-color: #979794;
+}
+
+.animation {
+    position: absolute;
+    bottom: 320px;
+    right: 20px;
+}
+
+.imagefond {
+    background-image: url("images_the_district/44c57af8f266122fe86368ff0858ee77.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    border: 8px solid;
+    border-color: #979794;
+}
+
+#titrecard {
+    color: #979794
+}
+
+#descriptioncard {
+    color: #979794
+}
+
+#quantitecard {
+    color: #979794
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+p {
+    height: 40px;
+    color: #ffffff;
+}
+
+#bouton {
+    align-items: end
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+#categorie {
+    display: flex;
+    justify-content: center;
+    color: #303030;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#cat {
+    background-color: #303030;
+    border-radius: 20px;
+    border: 8px solid;
+    border-color: #979494;
+}
+
+#textcard {
+    color: #979494;
+}
+
+.animation {
+    position: absolute;
+    bottom: 320px;
+    right: 20px;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+p {
+    height: 40px;
+    color: #303030;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#recherche {
+    position: relative;
+    bottom: 360px; left: 40px;
+    background-color: #303030;
+    border-radius: 20px;
+    border-color: #979494;
+    color: #ff0000;
+}
+
+#titreplats {
+    display: flex;
+    justify-content: center;
+    color: #303030;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#textcard {
+    color: #979494;
+}
+
+.img-fluid {
+    width: 280px;
+    height: 140px;
+}
+
+.commander {
+    display: flex;
+    margin-left: 220px;
+}
+
+#plat {
+    background-color: #303030;
+    border-radius: 20px;
+    border: 8px solid;
+    border-color: #979494;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+svg {
+	font-family: "Itim", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 10s alternate;
+	stroke-width: 2;
+	stroke: #9F0000;
+	font-size: 100px;
+}
+
